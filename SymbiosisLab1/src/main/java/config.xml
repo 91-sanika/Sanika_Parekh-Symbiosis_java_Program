@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="cricket" class="Spring.SymbiosisLab1.Cricket">
+		<constructor-arg value="Balling"></constructor-arg>	
+		<constructor-arg value="veg"></constructor-arg>
+		<constructor-arg value="6 A.M"></constructor-arg>
+	</bean>
+	
+
+<bean id = "DayTime" class="Spring.SymbiosisLab1.DayTime"></bean>
+<bean id = "NightTime" class="Spring.SymbiosisLab1.NightTime"></bean>
+		
+		
+</beans>
+
