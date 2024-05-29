@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html  xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Register Here</h1>
+    <div class="form-container">
+        <form th:action="@{/status}" method="post" th:object="${employee}">
+            <label>Enter Your firstName</label>
+            <input type="text" placeholder="Enter firstName" name="firstName" th:field="*{firstName}">
+            <br>
+            <label>Enter Your lastName</label>
+            <input type="text" placeholder="Enter lastName" name="lastName" th:field="*{lastName}">
+            <br>
+            <label>Enter Your department</label>
+            <input type="text" placeholder="Enter department" name="department" th:field="*{department}">
+            <br>
+            <input type="submit">
+        </form>
+    </div>
+</div>
+</form>
+</body>
+</html>
